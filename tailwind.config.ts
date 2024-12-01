@@ -11,7 +11,7 @@ export default {
   	extend: {
 		colors: {
 			
-			  primary: "#7b2cbf",
+			  primary: "#9400FF",
 			 
 			  secondary: {
 				DEFAULT: "hsl(var(--secondary))",

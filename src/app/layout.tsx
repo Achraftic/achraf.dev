@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle";
 
+
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
@@ -23,10 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-        className={`${poppins.variable} antialiased bg-gradient-to-tr min-h-screen text-sm`}
+        className={`${poppins.variable} antialiased `}
       >
-
-
 
         <ThemeProvider
           attribute="class"
@@ -34,16 +33,20 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        
-        <div
-          className="md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] rounded-full fixed -z-50 
-          bg-primary  bg-opacity-50 dark:bg-opacity-20 
-          left-[-5rem] bottom-[-5rem] blur-[60px]"
-        ></div>
-          {children}
+          <div className="relative w-full min-h-screen bg-zinc-50 z-40 dark:bg-zinc-900">
 
-          <ModeToggle />
+
+            <div className="md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] rounded-full fixed  
+          bg-primary    bg-opacity-55
+          left-[-5rem] bottom-[-5rem] blur-[70px] -z-10"
+            ></div>
+
+            {children}
+
+            <ModeToggle />
+          </div>
         </ThemeProvider>
+
       </body>
     </html>
   );
