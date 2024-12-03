@@ -16,7 +16,7 @@ export function ModeToggle() {
   const { setTheme } = useTheme()
 
   return (
-    <div className="fixed bottom-5 right-10">
+    <div className="fixed bottom-5 right-10 z-50">
 
     
     <DropdownMenu >
@@ -27,7 +27,7 @@ export function ModeToggle() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="*:cursor-pointer">
+      <DropdownMenuContent align="end" className="*:cursor-pointer  bg-zinc-50/90 z-50 dark:bg-zinc-800/90 ">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>

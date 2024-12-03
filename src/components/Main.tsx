@@ -70,7 +70,6 @@ export default function Main() {
                             <motion.a
                                 key={idx}
                                 href={social.href}
-                                whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                                 className="backdrop-blur-3xl p-1.5 cursor-pointer hover:bg-primary transition-all ease-in-out hover:text-zinc-50 rounded-full"
                             >
