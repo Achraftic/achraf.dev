@@ -51,7 +51,7 @@ export default function Main() {
                         applications.
                     </motion.p>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="flex max-sm:flex-wrap-reverse gap-4 items-center">
                     <Button
                         className="group"
                         variant="outline"
@@ -59,7 +59,7 @@ export default function Main() {
                         Download CV{" "}
                         <HiDownload className="group-hover:translate-y-0.5 transition duration-200 ease-in-out" />
                     </Button>
-                    <div className="text-xl flex gap-2 text-zinc-500">
+                    <div className="text-xl flex  gap-1 text-zinc-500">
                         {[
                             { icon: <CiLinkedin />, href: "#" },
                             { icon: <GrGithub />, href: "#" },

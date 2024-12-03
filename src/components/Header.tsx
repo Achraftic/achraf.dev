@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header className="relative w-max mx-auto py-2.5 px-5  ">
             {/* Background Layer */}
-            <div className="bg-white dark:bg-zinc-800  backdrop-blur-2xl bg-opacity-50 shadow-lg shadow-zinc-100/50 dark:shadow-zinc-900 absolute inset-0 rounded-full z-0"></div>
+            <div className="bg-white dark:bg-zinc-800/40  backdrop-blur-2xl bg-opacity-50 shadow-lg shadow-zinc-100/50 dark:shadow-zinc-900 absolute inset-0 rounded-full z-0"></div>
 
             {/* Navigation */}
             <nav className="max-w-[300px] sm:max-w-xl z-10">

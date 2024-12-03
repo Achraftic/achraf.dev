@@ -29,7 +29,7 @@ const Tech = () => {
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className="border border-opacity-10 p-3 rounded-md border-slate-900 text-zinc-900 dark:text-zinc-400 hover:border-purple-700 hover:text-purple-600 transition duration-200 ease-in-out cursor-pointer text-2xl w-max backdrop-blur-3xl"
+            className="border border-opacity-10 p-3 rounded-md border-slate-900 text-zinc-900 dark:text-zinc-400 hover:border-primary hover:text-primary dark:hover:text-primary transition duration-200 ease-in-out cursor-pointer text-2xl w-max backdrop-blur-3xl"
           >
             {tech.icon}
           </div>

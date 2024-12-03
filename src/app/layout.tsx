@@ -1,8 +1,11 @@
+
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle";
+import MainLayout from "@/components/layout/MainLayout";
+
 
 
 const poppins = Poppins({
@@ -33,9 +36,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative w-full min-h-screen bg-zinc-50 z-40 dark:bg-zinc-900">
 
 
+          <MainLayout>
             <div className="md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] rounded-full fixed  
           bg-primary    bg-opacity-55
           left-[-5rem] bottom-[-5rem] blur-[70px] -z-10"
@@ -44,7 +47,7 @@ export default function RootLayout({
             {children}
 
             <ModeToggle />
-          </div>
+          </MainLayout>
         </ThemeProvider>
 
       </body>
