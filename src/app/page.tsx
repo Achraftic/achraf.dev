@@ -2,6 +2,8 @@
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
+
 
 
 
@@ -11,11 +13,9 @@ export default function Home() {
       <Header />
       <div className=" sm:p-7 p-4 my-10 flex flex-col gap-32 overflow-hidden   ">
         <Main />
-        <About  />
-   
+        <About />
+        <Projects />
       </div>
-      
-    
     </div>
   );
 }

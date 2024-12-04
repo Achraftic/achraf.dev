@@ -20,7 +20,7 @@ export default function About() {
                 className='z-10 relative rounded-lg grid md:grid-cols-3 grid-cols-2 gap-3'
             >
                 {/* About Me Card */}
-                <Card title="About Me" className='col-span-2 dark:bg-zinc-800/30'>
+                <Card bgDots title="About Me" className='col-span-2 dark:bg-zinc-800/30'>
                     <p className="text-base text-zinc-800 dark:text-zinc-100">
                         Hi! I’m <span className="text-primary font-semibold">Achraf</span>, a
                         full-stack developer with 7+ years of experience. I specialize in crafting

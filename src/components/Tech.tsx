@@ -1,6 +1,6 @@
 import React from "react";
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaReact, FaLaravel, FaJs, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaReact, FaLaravel, FaJs, FaHtml5, FaCss3, FaDocker } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiDjango, SiMysql, SiPrisma, SiScikitlearn, SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -19,6 +19,7 @@ const technologies = [
   { name: "TypeScript", icon: <BiLogoTypescript /> },
   { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
   { name: "SiMysql", icon: <SiMysql /> },
+  { name: "Docker", icon: <FaDocker /> },
 ];
 
 const Tech = () => {
