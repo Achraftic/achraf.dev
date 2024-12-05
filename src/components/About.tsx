@@ -22,11 +22,8 @@ export default function About() {
                 {/* About Me Card */}
                 <Card bgDots title="About Me" className='col-span-2 dark:bg-zinc-800/30'>
                     <p className="text-base text-zinc-800 dark:text-zinc-100">
-                        Hi! I’m <span className="text-primary font-semibold">Achraf</span>, a
-                        full-stack developer with 7+ years of experience. I specialize in crafting
-                        scalable, high-performance web applications that are as elegant as they are
-                        functional. I am passionate about creating beautiful and user-friendly
-                        experiences.
+                       
+                        Hi there! I’m a full-stack web developer exploring data science, skilled in React, Django, Tailwind CSS, and Python. I’ve built projects ranging from dynamic web apps to e-commerce platforms and am passionate about learning, problem-solving, and creating impactful solutions.
                     </p>
                 </Card>
 

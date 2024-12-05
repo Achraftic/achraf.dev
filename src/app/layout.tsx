@@ -39,8 +39,8 @@ export default function RootLayout({
 
 
           <MainLayout>
-            <div className="md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] rounded-full fixed  
-          bg-primary    bg-opacity-55
+            <div className=" w-[15rem] h-[15rem] rounded-full fixed  
+          bg-primary    bg-opacity-30
           left-[-5rem] bottom-[-5rem] blur-[70px] -z-10"
             ></div>
 

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+:root{
+    --primary-color:#9400FF;
+}
 @layer components{
     .contact-style{
        @apply dark:bg-zinc-900/30 bg-zinc-100 bg-opacity-30 shadow-sm border border-opacity-30 dark:border-zinc-700/70 backdrop-blur-3xl

@@ -38,17 +38,15 @@ export default function Main() {
                         className="text-zinc-700 dark:text-zinc-300"
                     >
                         I&apos;m a full-stack developer passionate about building products and
-                        web apps that can impact millions of lives.
+                        web apps that can solve real-world problems.
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.7 }}
-                        className="text-zinc-600 dark:text-zinc-300"
+                        className="text-zinc-600 dark:text-zinc-300 max-w-screen-lg"
                     >
-                        As a senior software engineer with 7 years of experience, I specialize
-                        in crafting scalable, performance-optimized, and visually appealing web
-                        applications.
+                     As a full-stack developer with a growing passion for development, I specialize in creating scalable, user-friendly, and performance-optimized web applications. I’m building my skills in crafting visually appealing and functional solutions.
                     </motion.p>
                 </div>
                 <div className="flex max-sm:flex-wrap-reverse gap-4 items-center">
@@ -93,6 +91,9 @@ export default function Main() {
                     className="max-md:w-64"
                     width={500}
                     height={500}
+                    priority
+                   
+
                 />
             </motion.div>
         </motion.main>
