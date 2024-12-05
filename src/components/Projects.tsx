@@ -12,14 +12,14 @@ export default function Projects() {
 
                     <h1>My Projects</h1>
                 </Button>
-                <h1 className='sm:text-4xl text-3xl md:text-5xl font-bold'>Check out my latest work</h1>
+                <h1 className='sm:text-4xl text-3xl md:text-5xl font-bold text-center'>Check out my latest work</h1>
 
-                <p className='md:text-xl   text-center px-4 text-zinc-500 md:w-3/4 '>I&apos;ve worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
+                <p className='md:text-xl   text-center md:px-4  text-zinc-500 md:w-3/4 '>I&apos;ve worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
             </div>
 
 
             <div className='grid sm:grid-cols-2 grid-cols-1  gap-5 my-10'>
-                <Project />
+                <Project  />
                 <Project />
                 <Project />
 

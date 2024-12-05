@@ -8,7 +8,7 @@ import { TfiWorld } from 'react-icons/tfi';
 
 export default function Project() {
     return (
-        <Card>
+        <Card ishover>
             <div className="flex flex-col items-center">
                 <Image
                     src={image}
