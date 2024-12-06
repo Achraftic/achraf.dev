@@ -21,7 +21,7 @@ export default function Card({
       animate={{ opacity: 1, }}
       whileTap={{ scale: 0.98 }}
       whileInView={{ opacity: 1 }} // Animation when the element enters the viewport
-      viewport={{ once: true }} // Trigger the animation once when the card comes into view
+      viewport={{ once: false }} // Trigger the animation once when the card comes into view
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={cn(
         'p-4 card relative flex flex-col gap-5  rounded-lg  dark:bg-zinc-900/30 bg-zinc-100 bg-opacity-30 shadow-sm border border-opacity-15 dark:border-zinc-800 backdrop-blur-3xl',

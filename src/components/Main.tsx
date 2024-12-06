@@ -10,9 +10,11 @@ import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { GrGithub } from "react-icons/gr";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
+import AnimatedLayout from "./AnimatedLayout";
 
 export default function Main() {
     return (
+        <AnimatedLayout id="Home" label="Home">
         <motion.main
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -97,5 +99,6 @@ export default function Main() {
                 />
             </motion.div>
         </motion.main>
+        </AnimatedLayout>
     );
 }
