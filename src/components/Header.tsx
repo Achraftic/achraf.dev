@@ -12,7 +12,7 @@ export default function Header() {
   const scrollToSection = (id: string) => {
     const target = document.getElementById(id);
     if (target) {
-      const top = target.getBoundingClientRect().top + window.scrollY;
+      const top = target.getBoundingClientRect().top + window.scrollY - 100; // Adjusted for -50px offset
       animate(window.scrollY, top, {
         duration: 0.6,
         ease: [0.25, 0.1, 0.25, 1],
@@ -20,6 +20,7 @@ export default function Header() {
       });
     }
   };
+  
 
   return (
     <header className="w-max mx-auto py-2.5 px-5 sticky z-[999] top-5 left-0 right-0">

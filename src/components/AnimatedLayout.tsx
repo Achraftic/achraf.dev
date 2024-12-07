@@ -12,18 +12,29 @@ const AnimatedLayout: React.FC<{ id: string; label: string; children: React.Reac
   const ref = useRef(null);
   const context = useContext(HeaderContext);
 
-  const isInView = useInView(ref, { margin: '-20% 0px -50% 0px' });
+  const isisInView = useInView(ref, { margin: '0% 0px -10% 0px' });
 
   React.useEffect(() => {
-    if (isInView) {
+    if (isisInView) {
       context?.setActiveLink(label);
     }
-  }, [isInView, label, context?.setActiveLink]);
+  }, [isisInView, label, context?.setActiveLink]);
 
   return (
     <motion.section
       ref={ref}
       id={id}
+
+      initial={{ opacity: 0, x: 50 }} // Initial state
+      animate={{
+        opacity: isisInView ? 1 : 0, // Fade-in effect
+        x: isisInView ? 0 : 50,      // Slide-up effect
+
+      }}
+      transition={{
+        opacity: { duration: 0.6, ease: "easeOut" }, // Fade-in transition
+        x: { duration: 0.6, ease: "easeOut" },       // Slide-up transition
+      }}
     >
       {children}
     </motion.section>

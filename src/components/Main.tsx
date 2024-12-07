@@ -6,11 +6,8 @@ import { motion } from "framer-motion";
 import img from "../../public/1695851354840-Standard.png";
 import { Button } from "@/components/ui/button";
 import { HiDownload } from "react-icons/hi";
-import { CiFacebook, CiLinkedin } from "react-icons/ci";
-import { GrGithub } from "react-icons/gr";
-import { RiInstagramLine } from "react-icons/ri";
-import { FaWhatsapp } from "react-icons/fa";
 import AnimatedLayout from "./AnimatedLayout";
+import { social_links } from "@/data";
 
 export default function Main() {
     return (
@@ -60,14 +57,9 @@ export default function Main() {
                         <HiDownload className="group-hover:translate-y-0.5 transition duration-200 ease-in-out" />
                     </Button>
                     <div className="text-xl flex  gap-1 text-zinc-500">
-                        {[
-                            { icon: <CiLinkedin />, href: "#" },
-                            { icon: <GrGithub />, href: "#" },
-                            { icon: <RiInstagramLine />, href: "#" },
-                            { icon: <CiFacebook />, href: "#" },
-                            { icon: <FaWhatsapp />, href: "#" },
-                        ].map((social, idx) => (
+                        {social_links.map((social, idx) => (
                             <motion.a
+                                target="_blank"
                                 key={idx}
                                 href={social.href}
                                 whileTap={{ scale: 0.9 }}
