@@ -6,10 +6,7 @@ import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 
-
-
-
-export default function Home() {
+export default async function Home() {
   return (
     <div className="max-w-4xl mx-auto h-full py-8  max-md:p-5 ">
       <Header />

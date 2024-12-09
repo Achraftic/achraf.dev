@@ -1,4 +1,3 @@
-import React from "react";
 import { BiSend } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { CiLocationOn, CiMail } from "react-icons/ci";

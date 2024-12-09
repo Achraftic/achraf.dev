@@ -5,8 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle";
 import MainLayout from "@/components/layout/MainLayout";
-
-
+import Gradient from "@/components/ui/Gradient";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,9 +14,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Next.js App",
-  description: "A modern layout using Next.js with custom fonts and gradient backgrounds.",
+  title: "Portfolio - Crafting Solutions with Code",
+  description: "Discover my journey as a developer, showcasing innovative projects, technical expertise, and creative problem-solving. Built with Next.js for a seamless and modern experience.",
 };
+
 
 export default function RootLayout({
   children,
@@ -25,31 +25,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className="scroll-smooth">
-      <body
-        className={`${poppins.variable} antialiased `}
-      >
+    <html lang="en" className="scroll-smooth">
 
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <meta name="keywords" content="Portfolio, Developer, Projects, Next.js, Web Development" />
+      <meta name="author" content="Tichirra Achraf" />
+      <meta property="og:title" content="Professional Portfolio" />
+      <meta property="og:description" content="Explore my projects and expertise as a developer." />
+      <meta property="og:url" content="https://your-portfolio-site.com" />
 
-
+      <body className={`${poppins.variable} antialiased `}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <MainLayout>
-            <div className=" w-[15rem] h-[15rem] rounded-full fixed  
-          bg-primary    bg-opacity-30
-          left-[-5rem] bottom-[-5rem] blur-[70px] -z-10"
-            ></div>
-
+            <Gradient />
             {children}
-
             <ModeToggle />
           </MainLayout>
         </ThemeProvider>
-
       </body>
     </html>
   );

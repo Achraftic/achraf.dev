@@ -1,7 +1,9 @@
-
+'use client'
 import { routes } from '@/routes'
 import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { scrollToSection } from './Header'
+import { social_links } from '@/data'
 
 interface NavigationItem {
     name: string
@@ -47,22 +49,22 @@ const Footer: React.FC = () => {
                     {navigation.main.map((item) => (
                         <div key={item.name} className="px-5 py-2">
                             <a
-                                href={item.path}
-                                className="text-sm hover:text-primary text-zinc-600  dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
+                                onClick={() => scrollToSection(item.name)}
+                                className="cursor-pointer text-sm hover:text-primary text-zinc-600  dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
                             >
                                 {item.name}
                             </a>
                         </div>
                     ))}
                 </nav>
-                <div className="mt-5 flex justify-center space-x-6">
-                    {navigation.social.map((item) => (
-                        <a
-                            key={item.name}
+                <div className="mt-5 flex justify-center gap-4">
+                    {social_links.map((item) => (
+                        <a  target='_blank'
+                            key={item.href}
                             href={item.href}
-                            className="text-zinc-600 hover:text-primary dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
+                            className="text-zinc-600 text-lg hover:text-primary dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
                         >
-                            <span className="sr-only">{item.name}</span>
+                           
                             {item.icon}
                         </a>
                     ))}

@@ -1,6 +1,4 @@
-import React from 'react'
 import { Button } from '../ui/button'
-
 type SectionLayoutProps = {
     children: React.ReactNode,
     title: string,

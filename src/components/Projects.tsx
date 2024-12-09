@@ -1,4 +1,3 @@
-import React from 'react'
 import Project from './Project';
 import SectionLayout from './layout/SectionLayout';
 import AnimatedLayout from './AnimatedLayout';

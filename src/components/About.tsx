@@ -1,11 +1,11 @@
 'use client'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { motion } from "framer-motion";
 import Tech from './Tech';
-import image from "../../public/ProjectImage/main.png";
 import Image from 'next/image';
 import Card from './layout/Card';
 import AnimatedLayout from './AnimatedLayout';
+import { projects } from '@/data';
 
 export default function About() {
 
@@ -37,7 +37,7 @@ export default function About() {
                     {/* Latest Project Card */}
                     <Card title="Latest Project">
                         <div className='flex flex-col justify-center items-center gap-3'>
-                            <Image src={image} alt="E-commerce Website" width={160} height={160} quality={100} />
+                            <Image src={projects[0].image} alt="E-commerce Website" width={160} height={160} quality={100} />
                             <h3 className='font-semibold'>E-commerce Website</h3>
                         </div>
                     </Card>

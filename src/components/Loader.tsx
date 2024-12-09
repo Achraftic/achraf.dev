@@ -1,57 +1,40 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
-interface ParticleProps {
-    id: number
-    x: number
-    y: number
-    size: number
-}
-
 const Loader = () => {
-    const [particles, setParticles] = useState<ParticleProps[]>([])
-    const particleCount = 50
+  const dots = 8
+  const radius = 20
 
-    useEffect(() => {
-        setParticles(
-            Array.from({ length: particleCount }, (_, i) => ({
-                id: i,
-                x: Math.random() * 200 - 100,
-                y: Math.random() * 200 - 100,
-                size: Math.random() * 4 + 2,
-            })),
+  return (
+    <div className="relative h-20 w-20">
+      {[...Array(dots)].map((_, index) => {
+        const angle = (index / dots) * (2 * Math.PI)
+        const x = radius * Math.cos(angle)
+        const y = radius * Math.sin(angle)
+
+        return (
+          <motion.div
+            key={index}
+            className="absolute h-3 w-3 rounded-full bg-primary"
+            style={{
+              left: `calc(50% + ${x}px)`,
+              top: `calc(50% + ${y}px)`,
+            }}
+            animate={{
+              scale: [0, 1, 0],
+              opacity: [0, 1, 0],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              delay: (index / dots) * 1.5,
+              ease: 'easeInOut',
+            }}
+          />
         )
-    }, [])
-
-    return (
-        <div className="w-full h-[100vh] flex justify-center items-center">
-            <div className="h-40 w-40 overflow-hidden  rounded-full bg-transparent">
-                <svg width="100%" height="100%" viewBox="-100 -100 200 200">
-                    {particles.map((particle) => (
-                        <motion.circle
-                            key={particle.id}
-                            cx={particle.x}
-                            cy={particle.y}
-                            r={particle.size}
-                            fill="#9400FF"
-                            initial={{ opacity: 0 }}
-                            animate={{
-                                opacity: [0, 1, 0],
-                                cx: [particle.x, 0, particle.x],
-                                cy: [particle.y, 0, particle.y],
-                            }}
-                            transition={{
-                                duration: 3,
-                                repeat: Infinity,
-                                ease: 'easeInOut',
-                                delay: Math.random() * 2,
-                            }}
-                        />
-                    ))}
-                </svg>
-            </div>
-        </div>
-    )
+      })}
+    </div>
+  )
 }
 
 export default Loader

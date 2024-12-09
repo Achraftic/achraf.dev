@@ -1,9 +1,10 @@
 'use client'
 import Loader from '@/components/Loader'
-import React from 'react'
 
 export default function loading() {
   return (
-     <Loader/>
+    <div className='grid place-items-center h-screen'>
+      <Loader/>
+    </div>
   )
 }

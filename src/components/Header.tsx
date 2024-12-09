@@ -2,25 +2,23 @@
 
 import { routes } from "@/routes";
 import clsx from "clsx";
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { motion, animate } from "framer-motion";
 import { HeaderContext } from "@/context/activeLink";
 
+export const scrollToSection = (id: string) => {
+  const target = document.getElementById(id);
+  if (target) {
+    const top = target.getBoundingClientRect().top + window.scrollY - 100; // Adjusted for -50px offset
+    animate(window.scrollY, top, {
+      duration: 0.6,
+      ease: [0.25, 0.1, 0.25, 1],
+      onUpdate: (value) => window.scrollTo(0, value),
+    });
+  }
+};
 export default function Header() {
   const context = useContext(HeaderContext);
-
-  const scrollToSection = (id: string) => {
-    const target = document.getElementById(id);
-    if (target) {
-      const top = target.getBoundingClientRect().top + window.scrollY - 100; // Adjusted for -50px offset
-      animate(window.scrollY, top, {
-        duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
-        onUpdate: (value) => window.scrollTo(0, value),
-      });
-    }
-  };
-  
 
   return (
     <header className="w-max mx-auto py-2.5 px-5 sticky z-[999] top-5 left-0 right-0">

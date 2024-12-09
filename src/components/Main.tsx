@@ -1,13 +1,11 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import img from "../../public/1695851354840-Standard.png";
 import { Button } from "@/components/ui/button";
 import { HiDownload } from "react-icons/hi";
 import AnimatedLayout from "./AnimatedLayout";
-import { social_links } from "@/data";
+import { HeroData, social_links } from "@/data";
 
 export default function Main() {
     return (
@@ -80,9 +78,9 @@ export default function Main() {
                 className="mx-auto max-md:my-5"
             >
                 <Image
-                    src={img}
+                    src={HeroData.image}
                     alt="Achraf's profile picture"
-                    className="max-md:w-64"
+                    className="max-md:w-64  "
                     width={500}
                     height={500}
                     priority

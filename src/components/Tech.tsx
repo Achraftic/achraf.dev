@@ -1,4 +1,3 @@
-import React from "react";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact, FaLaravel, FaJs, FaHtml5, FaCss3, FaDocker } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
