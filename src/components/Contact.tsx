@@ -1,10 +1,11 @@
-import { BiSend } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
-import { Button } from "./ui/button";
 import SectionLayout from "./layout/SectionLayout";
 import AnimatedLayout from "./AnimatedLayout";
+import ContactForm from "./Contact_Form";
+
+
 
 const Contact = () => {
     return (
@@ -47,46 +48,7 @@ const Contact = () => {
                             </li>
                         </ul>
                     </div>
-                    <form className="flex flex-col gap-5 w-full  ">
-                        <div className="flex flex-col gap-2 w-full">
-                            <label className="font font-semibold text-zinc-800 dark:text-zinc-100" htmlFor="fullname">
-                                Full name
-                            </label>
-                            <input
-                                type="text"
-                                name="fullname"
-                                className="p-2.5 bg-transparent text-sm border contact-style  focus:outline-primary outline-none focus:border-none rounded-md text-zinc-800 dark:text-zinc-100"
-                                placeholder="John Doe"
-                            />
-
-                        </div>
-                        <div className="flex flex-col gap-2 w-full">
-                            <label className="font font-semibold  text-zinc-800 dark:text-zinc-100" htmlFor="email">
-                                Email
-                            </label>
-                            <input
-                                type="text"
-                                name="fullname"
-                                className="p-2.5 bg-transparent border text-sm contact-style  focus:outline-primary focus:border-none outline-none rounded-md text-zinc-800 dark:text-zinc-100"
-                                placeholder="johndoe@example.com"
-                            />
-                        </div>
-                        <div className="flex flex-col gap-2 w-full">
-                            <label className="font font-semibold text-zinc-800 dark:text-zinc-100" htmlFor="message">
-                                Message
-                            </label>
-                            <textarea
-                                name="fullname"
-                                className="p-2.5 bg-transparent text-sm border contact-style  focus:outline-primary outline-none focus:border-none rounded-md text-zinc-800 dark:text-zinc-100 resize-none"
-                                id=""
-                                cols={30}
-                                rows={10}
-                                placeholder="Write your message here..."
-                            ></textarea>
-                        </div>
-
-                        <Button variant="primary" className="w-max self-end "><BiSend /> Send </Button>
-                    </form>
+                  <ContactForm />
                 </div>
             </SectionLayout>
         </AnimatedLayout>

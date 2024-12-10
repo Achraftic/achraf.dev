@@ -29,7 +29,7 @@ export default function Card({
       {children}
 
       {WithIcon && (
-        <span className="absolute bottom-4 right-4 cursor-pointer group p-1 text-zinc-900 dark:text-zinc-100 dark:bg-zinc-800 bg-zinc-100 rounded-full">
+        <span className="absolute bottom-4 right-4 cursor-pointer group p-1 text-zinc-900  bg-zinc-100 rounded-full">
           <IoIosArrowRoundForward className="group-hover:translate-x-0.5 duration-300" />
         </span>
       )}

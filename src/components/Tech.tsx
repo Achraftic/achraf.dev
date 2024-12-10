@@ -1,7 +1,7 @@
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaReact, FaLaravel, FaJs, FaHtml5, FaCss3, FaDocker } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiDjango, SiMysql, SiPrisma, SiScikitlearn, SiTailwindcss } from "react-icons/si";
+import { SiDjango, SiMysql, SiPandas, SiPrisma, SiScikitlearn, SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 const technologies = [
@@ -14,11 +14,13 @@ const technologies = [
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { name: "Next.js", icon: <RiNextjsFill /> },
   { name: "Scikit-Learn", icon: <SiScikitlearn /> },
+  { name: "SiPandas", icon: <SiPandas /> },
   { name: "Prisma", icon: <SiPrisma /> },
   { name: "TypeScript", icon: <BiLogoTypescript /> },
   { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
   { name: "SiMysql", icon: <SiMysql /> },
   { name: "Docker", icon: <FaDocker /> },
+  { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
 ];
 
 const Tech = () => {

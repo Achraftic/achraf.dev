@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle";
 import MainLayout from "@/components/layout/MainLayout";
 import Gradient from "@/components/ui/Gradient";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
           <MainLayout>
             <Gradient />
             {children}
+            <Toaster/>
             <ModeToggle />
           </MainLayout>
         </ThemeProvider>
