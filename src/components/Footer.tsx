@@ -1,6 +1,6 @@
 'use client'
 import { routes } from '@/routes'
-import React from 'react'
+import React, { JSX } from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { scrollToSection } from './Header'
 import { social_links } from '@/data'
