@@ -23,7 +23,7 @@ export default function About() {
                 >
                     {/* About Me Card */}
                     <Card bgDots title="About Me" className='col-span-2 dark:bg-zinc-800/30'>
-                        <p className="text-base text-zinc-800 dark:text-zinc-100">
+                        <p className="text-base text-zinc-700 dark:text-zinc-300">
 
                             Hi there! I’m a full-stack web developer exploring data science, skilled in React, Django, Tailwind CSS, and Python. I’ve built projects ranging from dynamic web apps to e-commerce platforms and am passionate about learning, problem-solving, and creating impactful solutions.
                         </p>
@@ -43,8 +43,8 @@ export default function About() {
                     </Card>
 
                     {/* Let's Work Together Card */}
-                    <Card WithIcon className='md:col-span-2 bg-primary dark:bg-primary bg-opacity-100'>
-                        <h2 className='md:text-4xl text-3xl font-semibold mt-5 text-zinc-50'>
+                    <Card WithIcon className='md:col-span-2 max-sm:p-3 bg-primary dark:bg-primary bg-opacity-100'>
+                        <h2 className='sm:text-4xl  text-3xl font-semibold mt-5 text-zinc-50'>
                             Let&apos;s <br /> work <span className='text-black'>together.</span>
                         </h2>
                     </Card>

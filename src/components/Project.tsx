@@ -13,7 +13,7 @@ export default function Project({ project }: { project: project }) {
             <ImageFade src={image} />
             <div className=" grid  gap-1.5 p-2 ">
                 <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">{title}</h2>
-                <p className="text-xs dark:text-zinc-300 text-zinc-700 ">Jan 2024 - Feb 2024</p>
+                {/* <p className="text-xs dark:text-zinc-300 text-zinc-700 ">Jan 2024 - Feb 2024</p> */}
                 <p className=" text-zinc-500 dark:text-zinc-400 text-xs">
                     {description}
                 </p>

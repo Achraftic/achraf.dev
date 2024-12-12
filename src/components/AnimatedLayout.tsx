@@ -12,7 +12,7 @@ const AnimatedLayout: React.FC<{ id: string; label: string; children: React.Reac
   const ref = useRef(null);
   const context = useContext(HeaderContext);
 
-  const isisInView = useInView(ref, { margin: '0% 0px -10% 0px' });
+  const isisInView = useInView(ref, { margin: '0% 0px -50% 0px' });
 
   React.useEffect(() => {
     if (isisInView) {
@@ -24,7 +24,6 @@ const AnimatedLayout: React.FC<{ id: string; label: string; children: React.Reac
     <motion.section
       ref={ref}
       id={id}
-
       initial={{ opacity: 0, x: 50 }} // Initial state
       animate={{
         opacity: isisInView ? 1 : 0, // Fade-in effect
