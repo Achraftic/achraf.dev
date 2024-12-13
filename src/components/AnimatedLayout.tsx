@@ -12,7 +12,7 @@ const AnimatedLayout: React.FC<{ id: string; label: string; children: React.Reac
   const ref = useRef(null);
   const context = useContext(HeaderContext);
 
-  const isisInView = useInView(ref, { margin: '0% 0px -50% 0px' });
+  const isisInView = useInView(ref, { margin: '0% 0px -30% 0px' });
 
   React.useEffect(() => {
     if (isisInView) {

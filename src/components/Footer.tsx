@@ -44,13 +44,13 @@ const navigation: {
 const Footer: React.FC = () => {
     return (
         <footer className="w-full">
-            <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full  px-0.5 sm:px-6 lg:px-8">
                 <nav className="flex flex-wrap justify-center">
                     {navigation.main.map((item) => (
                         <div key={item.name} className="px-5 py-2">
                             <a
                                 onClick={() => scrollToSection(item.name)}
-                                className="cursor-pointer text-sm hover:text-primary text-zinc-600  dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
+                                className="cursor-pointer text-sm hover:text-primary text-zinc-500  dark:text-zinc-300 dark:hover:text-primary transition duration-200 ease-in-out"
                             >
                                 {item.name}
                             </a>
@@ -62,14 +62,14 @@ const Footer: React.FC = () => {
                         <a  target='_blank'
                             key={item.href}
                             href={item.href}
-                            className="text-zinc-600 text-lg hover:text-primary dark:text-zinc-200 dark:hover:text-primary transition duration-200 ease-in-out"
+                            className="text-zinc-500 text-lg hover:text-primary dark:text-zinc-300 dark:hover:text-primary transition duration-200 ease-in-out"
                         >
                            
                             {item.icon}
                         </a>
                     ))}
                 </div>
-                <p className="mt-6 text-center text-sm text-zinc-600 dark:text-zinc-100">
+                <p className="mt-6 text-center text-sm text-zinc-400 dark:text-zinc-400">
                     &copy; {new Date().getFullYear()} Achraf. All rights reserved.
                 </p>
             </div>

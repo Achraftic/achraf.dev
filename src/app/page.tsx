@@ -8,9 +8,9 @@ import Contact from "@/components/Contact";
 
 export default async function Home() {
   return (
-    <div className="max-w-4xl mx-auto h-full py-8  max-md:p-5 ">
+    <div className="    max-w-4xl xl:max-w-4xl mx-auto h-full py-8  max-md:p-5 ">
       <Header />
-      <div className=" sm:p-7 p-4 my-10 flex flex-col gap-36 overflow-hidden   ">
+      <div className=" sm:p-7 p-4 my-10  flex flex-col gap-32  overflow-hidden   ">
         <Main />
         <About />
         <Projects />

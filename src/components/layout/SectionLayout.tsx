@@ -7,7 +7,7 @@ type SectionLayoutProps = {
 }
 export default function SectionLayout({ children, title, heading, description }: SectionLayoutProps) {
     return (
-        <div>
+        <div className='min-h-[70vh]'>
             <div className='grid place-items-center gap-2.5 my-10'>
                 <Button className='h-7 m-auto' asChild>
                     <h1> {title} </h1>

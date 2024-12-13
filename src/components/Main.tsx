@@ -15,7 +15,7 @@ export default function Main() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 30 }}
             transition={{ duration: 0.7 }}
-            className="z-30 flex max-md:flex-wrap items-center"
+            className="z-30 flex py-10 max-lg:flex-wrap min-h-[60vh]"
         >
             {/* Left Section */}
             <motion.div
@@ -24,7 +24,7 @@ export default function Main() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="gap-5 flex flex-col"
             >
-                <h1 className="text-5xl max-sm:text-4xl font-bold">
+                <h1 className="sm:text-6xl text-4xl font-bold">
                     Hello 👋 there! I&apos;m <span className="text-primary">Achraf</span>
                 </h1>
                 <div className="gap-4 grid text-base">
@@ -80,7 +80,7 @@ export default function Main() {
                 <Image
                     src={HeroData.image}
                     alt="Achraf's profile picture"
-                    className="max-md:w-64  "
+                    className="max-md:w-64 max-lg:w-80  "
                     width={500}
                     height={500}
                     priority

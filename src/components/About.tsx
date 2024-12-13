@@ -19,7 +19,7 @@ export default function About() {
                     whileInView={{ x: 0 }}
                     viewport={{ root: scrollRef }}
                     transition={{ duration: 0.5 }}
-                    className='z-10 relative rounded-lg grid md:grid-cols-3 grid-cols-2 gap-3'
+                    className='z-10 relative rounded-lg   min-h-[60vh] grid md:grid-cols-3 grid-cols-2 gap-3'
                 >
                     {/* About Me Card */}
                     <Card bgDots title="About Me" className='col-span-2 dark:bg-zinc-800/30'>

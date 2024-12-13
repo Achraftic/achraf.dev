@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <AnimatedLayout id="Contact" label="Contact">
             <SectionLayout title="Contact" heading="Get in touch with me" description="Want to chat? Simply drop me a direct message on WhatsApp or use the form below with a clear question, and I'll get back to you as soon as I can.">
-                <div className="flex  max-md:flex-wrap gap-5 ">
+                <div className="flex  max-md:flex-wrap sm:gap-5 gap-8 ">
                     <div className="flex flex-col gap-5  w-full">
                         <ul className="text-zinc-800 *:cursor-pointer  dark:text-zinc-100  flex md:w-96 flex-wrap gap-3">
                             <li className="flex flex-col justify-center grow items-center gap-2 lg:w-32  contact-style text-sm border p-5 rounded-md transition duration-300 hover:bg-primary     hover:text-zinc-100">

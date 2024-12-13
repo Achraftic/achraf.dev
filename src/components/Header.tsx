@@ -12,7 +12,7 @@ export const scrollToSection = (id: string) => {
     const top = target.getBoundingClientRect().top + window.scrollY - 100; // Adjusted for -50px offset
     animate(window.scrollY, top, {
       duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1],
+      ease: "easeInOut",
       onUpdate: (value) => window.scrollTo(0, value),
     });
   }
@@ -40,7 +40,7 @@ export default function Header() {
               {context?.activeLink === route.name && (
                 <motion.span
                   layoutId="tab"
-                  transition={{ type: "spring", duration: 0.6 }}
+                  transition={{duration: 0.3 }}
                   className="w-full h-full absolute top-0 left-0 z-[-1] rounded-full bg-primary"
                 ></motion.span>
               )}
